@@ -77,7 +77,7 @@ export default function Services() {
           <div className="w-16 md:w-24 h-1 bg-gradient-to-l from-accent to-accent-2 mx-auto rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}

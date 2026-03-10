@@ -7,9 +7,9 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-12 md:pt-20">
       {/* Background Glows */}
-      <div className="absolute top-1/4 -right-20 w-64 h-64 md:w-96 md:h-96 bg-accent opacity-25 blur-[120px] rounded-full" />
-      <div className="absolute bottom-1/4 -left-20 w-64 h-64 md:w-96 md:h-96 bg-purple-800 opacity-15 blur-[120px] rounded-full" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600 opacity-5 blur-[150px] rounded-full" />
+      <div className="absolute top-1/4 right-0 w-64 h-64 md:w-96 md:h-96 bg-accent opacity-25 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-1/4 left-0 w-64 h-64 md:w-96 md:h-96 bg-purple-800 opacity-15 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 md:w-96 h-64 md:h-96 bg-indigo-600 opacity-5 blur-[150px] rounded-full pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -27,7 +27,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.2] md:leading-tight mb-6 md:mb-8"
+            className="text-3xl sm:text-5xl md:text-7xl font-black leading-[1.2] md:leading-tight mb-6 md:mb-8"
           >
             أحول إعلاناتك إلى{" "}
             <span className="gradient-text">

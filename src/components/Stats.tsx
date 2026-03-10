@@ -52,7 +52,7 @@ export default function Stats() {
                 {stat.icon}
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-5xl font-black gradient-text mb-1 md:mb-2">
+                <div className="text-3xl md:text-5xl font-black gradient-text mb-1">
                   {stat.value}
                 </div>
                 <div className="text-[10px] md:text-sm font-medium text-foreground/60 uppercase tracking-widest mb-1">

@@ -9,7 +9,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background mesh-gradient">
+    <main className="min-h-screen bg-background mesh-gradient relative overflow-x-hidden">
       {/* Navigation */}
       <div className="fixed top-0 left-0 w-full h-16 md:h-20 glass z-50 border-none flex items-center justify-between px-6 md:px-10">
         <div className="text-xl md:text-2xl font-black gradient-text tracking-tighter">MOHAMED MAHMOUD</div>

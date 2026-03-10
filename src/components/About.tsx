@@ -35,8 +35,8 @@ export default function About() {
                   </div>
                </div>
             </div>
-            <div className="absolute -bottom-6 md:-bottom-10 -right-6 md:-right-10 w-32 h-32 md:w-48 md:h-48 bg-accent/20 blur-[60px] rounded-full -z-10" />
-            <div className="absolute -top-6 md:-top-10 -left-6 md:-left-10 w-32 h-32 md:w-48 md:h-48 bg-indigo-500/20 blur-[60px] rounded-full -z-10" />
+            <div className="absolute -bottom-6 md:-bottom-10 right-0 w-32 h-32 md:w-48 md:h-48 bg-accent/20 blur-[60px] rounded-full -z-10" />
+            <div className="absolute -top-6 md:-top-10 left-0 w-32 h-32 md:w-48 md:h-48 bg-indigo-500/20 blur-[60px] rounded-full -z-10" />
           </motion.div>
 
           <motion.div
