@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050a14; /* Ultra Deep Navy Black */
+  --foreground: #f0f4ff;
+  --accent: #7c3aed; /* Vibrant Purple */
+  --accent-2: #a855f7; /* Lighter Purple */
+  --accent-glow: rgba(124, 58, 237, 0.4);
+  --accent-2-glow: rgba(168, 85, 247, 0.3);
+  --selection-bg: #7c3aed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-accent-glow: var(--accent-glow);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--accent), var(--accent-2));
+  border-radius: 20px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  selection-background-color: var(--selection-bg);
+}
+
+.glass {
+  background: rgba(15, 10, 35, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.glass-card {
+  background: rgba(20, 10, 45, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+}
+
+.glow-purple {
+  box-shadow: 0 0 30px var(--accent-glow), 0 0 60px rgba(124, 58, 237, 0.15);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #a855f7, #7c3aed, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mesh-gradient {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(124, 58, 237, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+}
